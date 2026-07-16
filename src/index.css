@@ -1,5 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 
 body {
   margin: 0;
@@ -11,7 +12,7 @@ body {
 
 }
 
-code {
+code { 
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
