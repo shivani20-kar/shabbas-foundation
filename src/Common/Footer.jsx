@@ -33,13 +33,9 @@ const Footer = () => {
               १२२३ ब, करंजे पेठ,
               <br />
               सातारा.
-            </p>
-
-            <p>
+              <br />
               <a href="tel:+919145699909">+91 9145699909</a>
-            </p>
-
-            <p>
+              <br />
               <a href="mailto:info@shabbasacademy.com">
                 info@shabbasacademy.com
               </a>
@@ -51,7 +47,7 @@ const Footer = () => {
         <div className="footerCenter">
           <img src={logo} alt="Shabbas Academy" className="footerLogo" />
 
-          <h1>"शाब्बास अकॅडमी"</h1>
+          <h1>"शाब्बास फाऊंडेशन"</h1>
 
           <p>एक नवी पिढी घडवणारा आधुनिक शैक्षणिक उपक्रम.</p>
 
@@ -120,9 +116,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <Link to="/terms-and-conditions">
-                Terms and Conditions
-              </Link>
+              <Link to="/terms-and-conditions">Terms and Conditions</Link>
             </li>
 
             <li>
@@ -145,7 +139,7 @@ const Footer = () => {
         <p>
           All Copyright © Powered & Reserved by
           <a
-            href="https://designvio.com"
+            href="https://designvio.framer.ai/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -157,8 +151,8 @@ const Footer = () => {
         <p>
           Shabbas Talent Scholarship Exam is an independent voluntary
           competitive examination conducted by Shabbas Academy. It is not
-          affiliated with or recognized by any government authority and does
-          not affect school admissions.
+          affiliated with or recognized by any government authority and does not
+          affect school admissions.
         </p>
       </div>
     </footer>
