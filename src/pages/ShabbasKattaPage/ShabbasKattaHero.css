@@ -1,6 +1,6 @@
 .shabbaskattahero {
   width: 100%;
-  padding: 8vh 0;
+  padding: 8vh 0 0;
   background: #ffffff;
 }
 
@@ -27,7 +27,7 @@
 
 .shabbaskattaheroDescription {
   font-family: "Gotu", sans-serif;
-  margin-top: 2vh;
+  margin-top: 4vh;
   font-size: 1.5vw;
   line-height: 2.5vw;
   font-weight: 600;
@@ -36,7 +36,7 @@
 
 .shabbaskattaheroSubTitle {
   font-family: "Rozha One", serif;
-  margin-top: 2vh;
+  margin-top: 4vh;
   font-size: 3vw;
   line-height: 3.5vw;
   font-weight: 700;
@@ -51,9 +51,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  color: #fff;
 
+  color: #fff;
+  background: #0a2f59;
   text-decoration: none;
 
   border-radius: 5vw;
@@ -65,10 +65,10 @@
   cursor: pointer;
   transition: 0.3s;
 }
-
+/* 
 .shabbaskattaheroButton:hover {
   background: #0a2f59;
-}
+} */
 
 .shabbaskattaheroRight {
   width: 37vw;
