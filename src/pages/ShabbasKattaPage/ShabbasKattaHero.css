@@ -1,0 +1,94 @@
+.shabbaskattahero {
+  width: 100vw;
+  padding: 8vh 0;
+  background: #ffffff;
+}
+
+.shabbaskattaheroContainer {
+  width: 78vw;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shabbaskattaheroLeft {
+  width: 42vw;
+}
+
+.shabbaskattaheroTitle {
+  font-size: 3vw;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #000;
+}
+
+.shabbaskattaheroDescription {
+  margin-top: 1vh;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+
+  color: #111;
+}
+
+.shabbaskattaheroSubTitle {
+  margin-top: 6vh;
+
+  font-size: 2.7vw;
+  line-height: 3.5vw;
+
+  font-weight: 700;
+}
+
+.shabbaskattaheroButton {
+  margin-top: 5vh;
+
+  width: 12vw;
+  height: 6vh;
+
+  border: none;
+  border-radius: 5vw;
+
+  background: #0c3a70;
+
+  color: #fff;
+
+  font-size: 1.2vw;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.shabbaskattaheroButton:hover {
+  background: #0a2f59;
+}
+
+.shabbaskattaheroRight {
+  width: 37vw;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .shabbaskattaheroImage {
+  width: 37vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+
+  border-top-right-radius: 6vw;
+  border-bottom-left-radius: 6vw;
+} */
+
+.shabbaskattaheroImage {
+  width: 40vw;
+  height: 50vh;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-top-right-radius: 6vw;
+  border-bottom-left-radius: 6vw;
+}
