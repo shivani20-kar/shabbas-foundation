@@ -1,7 +1,7 @@
 /* ================= Footer ================= */
 
 .footer {
-  width: 100vw;
+  width: 100%;
   background: #023061;
   color: #ffffff;
   padding: 6vh 0 3vh;
@@ -9,7 +9,7 @@
 }
 
 .footerMain {
-  width: 90vw;
+  padding: 0 8vw;
   margin: 8px auto;
   display: flex;
   justify-content: space-between;
@@ -24,12 +24,14 @@
 }
 
 .footerLeft h2 {
+  font-family: "Rozha One", serif;
   font-size: 2.2vw;
   font-weight: 700;
   margin-bottom: 2vh;
 }
 
 .footerLeft p {
+  font-family: "Gotu", sans-serif;
   font-size: 1.2vw;
   line-height: 2vw;
   color: #f2f2f2;
@@ -71,12 +73,14 @@
 }
 
 .footerCenter h1 {
+  font-family: "Rozha One", serif;
   font-size: 2.8vw;
   font-weight: 700;
   margin-bottom: 1vh;
 }
 
 .footerCenter p {
+  font-family: "Gotu", sans-serif;
   font-size: 1.2vw;
   line-height: 2vw;
   color: #ededed;
@@ -99,7 +103,7 @@
   border-radius: 50%;
 
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 
   color: #fff;
@@ -135,6 +139,7 @@
 }
 
 .footerRight h2 {
+  font-family: "Rozha One", serif;
   font-size: 2.2vw;
   font-weight: 700;
   margin-bottom: 2vh;
@@ -155,6 +160,7 @@
   text-decoration: none;
   font-size: 1.2vw;
   transition: 0.3s;
+  font-family: "Gotu", sans-serif;
 }
 
 .footerRight li a:hover {
@@ -165,7 +171,7 @@
 /* ================= Bottom ================= */
 
 .footerBottom {
-  width: 90vw;
+  padding: 0 8vw;
   margin: 0vh auto 0;
   padding-top: 3vh;
 
@@ -175,11 +181,13 @@
 }
 
 .footerBottom p:first-child {
+  font-family: "Gotu", sans-serif;
   font-size: 1vw;
   margin-bottom: 1vh;
 }
 
 .footerBottom p:last-child {
+  font-family: "Gotu", sans-serif;
   font-size: 0.9vw;
   line-height: 1.8vw;
   color: #efefef;
