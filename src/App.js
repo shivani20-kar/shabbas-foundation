@@ -1,10 +1,11 @@
 import "./App.css";
 import Footer from "./Common/Footer";
+import Header from "./Common/Header";
 
 function App() {
   return (
     <div className="App">
-      {/* Footer */}
+      <Header/>
       <Footer />
     </div>
   );
