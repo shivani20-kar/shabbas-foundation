@@ -1,7 +1,6 @@
 import React from "react";
 import "./ShabbasKattaHero.css";
 import heroImage from "../ShabbasKattaPage/Images/shabbaskattahero.png";
-import { Link } from "react-router-dom";
 
 const ShabbasKattaHero = () => {
   return (
@@ -12,7 +11,7 @@ const ShabbasKattaHero = () => {
           <h1 className="shabbaskattaheroTitle">
             “इथे फक्त अभ्यास नाही,
             <br />
-            इथे घडतय भविष्य.”
+            इथे घडतय भविष्य.” 
           </h1>
 
           <p className="shabbaskattaheroDescription">
