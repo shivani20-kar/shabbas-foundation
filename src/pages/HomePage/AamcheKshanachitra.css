@@ -1,0 +1,82 @@
+.moment-gallery-section {
+  width: 100%;
+  padding: 10px 0 42px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.moment-gallery-heading {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.moment-gallery-heading h2 {
+  margin: 0;
+  color: #050505;
+  font-size: clamp(36px, 4vw, 54px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.moment-gallery-description {
+  margin: 8px auto 0;
+  color: #111111;
+  font-size: clamp(21px, 2.15vw, 30px);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.moment-gallery-subtitle {
+  margin: 18px auto 0;
+  color: #111111;
+  font-size: clamp(16px, 1.55vw, 21px);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Gallery */
+
+.moment-gallery-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.moment-gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.moment-gallery-track {
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+  width: max-content;
+  padding: 0 42px 12px;
+}
+
+.moment-gallery-card {
+  width: clamp(360px, 34vw, 470px);
+  height: 345px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 13px;
+  background: #f1f1f1;
+}
+
+.moment-gallery-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+}
+
+.moment-gallery-card:hover .moment-gallery-image {
+  transform: scale(1.04);
+  filter: brightness(0.96);
+}
