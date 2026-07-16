@@ -1,0 +1,314 @@
+/* ================= Footer ================= */
+
+.footer {
+  width: 100vw;
+  background: #0c3a70;
+  color: #ffffff;
+  padding: 6vh 0 3vh;
+  overflow: hidden;
+}
+
+.footerMain {
+  width: 90vw;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3vw;
+}
+
+/* ================= Left ================= */
+
+.footerLeft {
+  width: 28vw;
+}
+
+.footerLeft h2 {
+  font-size: 2.2vw;
+  font-weight: 700;
+  margin-bottom: 4vh;
+}
+
+.footerLeft p {
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #f2f2f2;
+}
+
+.contactDetails {
+  margin-top: 4vh;
+}
+
+.contactDetails p {
+  margin-bottom: 1.8vh;
+}
+
+.contactDetails a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contactDetails a:hover {
+  color: #f6c343;
+}
+
+/* ================= Center ================= */
+
+.footerCenter {
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footerLogo {
+  width: 8vw;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+.footerCenter h1 {
+  font-size: 2.8vw;
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
+
+.footerCenter p {
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #ededed;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2vw;
+  margin-top: 4vh;
+}
+
+.socialIcons a {
+  text-decoration: none;
+}
+
+.icon {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 1.4vw;
+
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-0.3vh);
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.instagram {
+  background: #e1306c;
+}
+
+.youtube {
+  background: #ff0000;
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+/* ================= Right ================= */
+
+.footerRight {
+  width: 25vw;
+}
+
+.footerRight h2 {
+  font-size: 2.2vw;
+  font-weight: 700;
+  margin-bottom: 4vh;
+}
+
+.footerRight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerRight li {
+  margin-bottom: 1.8vh;
+}
+
+.footerRight li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2vw;
+  transition: 0.3s;
+}
+
+.footerRight li a:hover {
+  color: #f6c343;
+  padding-left: 0.4vw;
+}
+
+/* ================= Bottom ================= */
+
+.footerBottom {
+  width: 90vw;
+  margin: 6vh auto 0;
+  padding-top: 3vh;
+
+  border-top: 0.1vh solid rgba(255, 255, 255, 0.2);
+
+  text-align: center;
+}
+
+.footerBottom p:first-child {
+  font-size: 1.1vw;
+  margin-bottom: 2vh;
+}
+
+.footerBottom p:last-child {
+  font-size: 1vw;
+  line-height: 1.8vw;
+  color: #efefef;
+}
+
+.footerBottom a {
+  color: #39a5ff;
+  text-decoration: none;
+}
+
+.footerBottom a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Tablet ================= */
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 6vh 0;
+  }
+
+  .footerMain {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6vh;
+  }
+
+  .footerLeft,
+  .footerCenter,
+  .footerRight {
+    width: 90vw;
+  }
+
+  .footerLeft h2,
+  .footerRight h2 {
+    font-size: 5vw;
+  }
+
+  .footerLeft p,
+  .footerCenter p,
+  .footerRight li a {
+    font-size: 2.6vw;
+    line-height: 4vw;
+  }
+
+  .footerCenter h1 {
+    font-size: 5vw;
+  }
+
+  .footerLogo {
+    width: 18vw;
+  }
+
+  .icon {
+    width: 8vw;
+    height: 8vw;
+    font-size: 3vw;
+  }
+
+  .footerBottom p:first-child {
+    font-size: 2vw;
+  }
+
+  .footerBottom p:last-child {
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 5vh 0;
+  }
+
+  .footerMain {
+    gap: 5vh;
+  }
+
+  .footerLeft,
+  .footerCenter,
+  .footerRight {
+    width: 92vw;
+  }
+
+  .footerLeft h2,
+  .footerRight h2 {
+    font-size: 7vw;
+  }
+
+  .footerLeft p,
+  .footerCenter p,
+  .footerRight li a {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+
+  .footerCenter h1 {
+    font-size: 7vw;
+  }
+
+  .footerLogo {
+    width: 24vw;
+  }
+
+  .socialIcons {
+    gap: 4vw;
+  }
+
+  .icon {
+    width: 13vw;
+    height: 13vw;
+    font-size: 5vw;
+  }
+
+  .footerBottom {
+    width: 92vw;
+    margin-top: 4vh;
+    padding-top: 3vh;
+  }
+
+  .footerBottom p:first-child {
+    font-size: 3.5vw;
+  }
+
+  .footerBottom p:last-child {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+}

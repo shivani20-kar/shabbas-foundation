@@ -1,18 +1,11 @@
-import './App.css';
+import "./App.css";
+import Footer from "./Common/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="hero">
-        <h1>Shabbas Foundation</h1>
-        <p>
-          Creating positive change through community support and social initiatives.
-        </p>
-
-      
-      </header>
-
-      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
