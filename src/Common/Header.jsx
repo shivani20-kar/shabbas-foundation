@@ -1,41 +1,117 @@
-import React, { useState } from "react";
-import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
-import "./Header.css";
+import React, { useEffect, useRef, useState } from "react";
+import {
+  FiChevronDown,
+  FiMenu,
+  FiX,
+} from "react-icons/fi";
+import {
+  NavLink,
+  useLocation,
+} from "react-router-dom";
 
+import "./Header.css";
 import logo from "./Images/shabbas-logo.png";
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [accountMenuOpen, setAccountMenuOpen] = useState(false);
+  const location = useLocation();
+  const accountRef = useRef(null);
 
-  const closeMobileMenu = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] =
+    useState(false);
+
+  const [accountMenuOpen, setAccountMenuOpen] =
+    useState(false);
+
+  const accountRoutes = [
+    "/shope",
+    "/checkout",
+    "/cart",
+  ];
+
+  const accountRouteActive = accountRoutes.some(
+    (route) =>
+      location.pathname === route ||
+      location.pathname.startsWith(`${route}/`),
+  );
+  const accountActive =
+    accountMenuOpen || accountRouteActive;
+
+  const closeAllMenus = () => {
     setMobileMenuOpen(false);
     setAccountMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen((previous) => !previous);
+    setAccountMenuOpen(false);
+  };
+
+  const toggleAccountMenu = () => {
+    setAccountMenuOpen((previous) => !previous);
+  };
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setAccountMenuOpen(false);
+  }, [location.pathname]);
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        accountRef.current &&
+        !accountRef.current.contains(event.target)
+      ) {
+        setAccountMenuOpen(false);
+      }
+    };
+
+    document.addEventListener(
+      "mousedown",
+      handleOutsideClick,
+    );
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleOutsideClick,
+      );
+    };
+  }, []);
+
+  const getNavClass = ({ isActive }) => {
+    if (isActive && !accountMenuOpen) {
+      return "nav-link active-link";
+    }
+
+    return "nav-link";
   };
 
   return (
     <header className="main-header">
       <div className="header-container">
-        <a href="/" className="header-brand" onClick={closeMobileMenu}>
+        <NavLink
+          to="/"
+          className="header-brand"
+          onClick={closeAllMenus}
+        >
           <img
             src={logo}
-            alt="शाब्बास अकॅडमी"
+            alt="शाब्बास फाऊंडेशन"
             className="header-logo"
           />
 
           <div className="brand-content">
-            <h1>
-              "शाब्बास फाऊंडेशन"
-            </h1>
-
+            <h1>"शाब्बास फाऊंडेशन"</h1>
           </div>
-        </a>
+        </NavLink>
 
         <button
           type="button"
           className="mobile-menu-button"
-          onClick={() => setMobileMenuOpen((prev) => !prev)}
-          aria-label="Toggle navigation"
+          onClick={toggleMobileMenu}
+          aria-label={
+            mobileMenuOpen
+              ? "Close navigation"
+              : "Open navigation"
+          }
           aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? <FiX /> : <FiMenu />}
@@ -43,93 +119,140 @@ export default function Header() {
 
         <nav
           className={`header-navigation ${
-            mobileMenuOpen ? "navigation-open" : ""
+            mobileMenuOpen
+              ? "navigation-open"
+              : ""
           }`}
         >
-          <a
-            href="/"
-            className="nav-link active-link"
-            onClick={closeMobileMenu}
+          <NavLink
+            to="/"
+            end
+            className={getNavClass}
+            onClick={closeAllMenus}
           >
             होम
-          </a>
+          </NavLink>
 
-          <a
-            href="/shabbas-katta"
-            className="nav-link"
-            onClick={closeMobileMenu}
+          <NavLink
+            to="/shabbas-katta"
+            className={getNavClass}
+            onClick={closeAllMenus}
           >
             शाब्बास कट्टा
-          </a>
+          </NavLink>
 
-          <a
-            href="/about"
-            className="nav-link"
-            onClick={closeMobileMenu}
+          <NavLink
+            to="/about"
+            className={getNavClass}
+            onClick={closeAllMenus}
           >
             आमची ओळख
-          </a>
+          </NavLink>
 
-          <a
-            href="/courses"
-            className="nav-link"
-            onClick={closeMobileMenu}
+          <NavLink
+            to="/courses"
+            className={getNavClass}
+            onClick={closeAllMenus}
           >
             अभ्यासक्रम
-          </a>
+          </NavLink>
 
-          <a
-            href="/blog"
-            className="nav-link"
-            onClick={closeMobileMenu}
+          <NavLink
+            to="/blog"
+            className={getNavClass}
+            onClick={closeAllMenus}
           >
             ब्लॉग
-          </a>
+          </NavLink>
 
-          <a
-            href="/contact"
-            className="nav-link"
-            onClick={closeMobileMenu}
+          <NavLink
+            to="/contact"
+            className={getNavClass}
+            onClick={closeAllMenus}
           >
             संपर्क
-          </a>
+          </NavLink>
 
-          <div className="account-dropdown">
+          <div
+            className="account-dropdown"
+            ref={accountRef}
+          >
             <button
               type="button"
-              className="nav-link account-button"
-              onClick={() => setAccountMenuOpen((prev) => !prev)}
+              className={`nav-link account-button ${
+                accountActive
+                  ? "active-link"
+                  : ""
+              }`}
+              onClick={toggleAccountMenu}
+              aria-expanded={accountMenuOpen}
+              aria-haspopup="true"
             >
-              माझे खाते
+              <span>माझे खाते</span>
 
               <FiChevronDown
-                className={accountMenuOpen ? "rotate-arrow" : ""}
+                className={
+                  accountMenuOpen
+                    ? "rotate-arrow"
+                    : ""
+                }
               />
             </button>
 
             {accountMenuOpen && (
               <div className="account-dropdown-menu">
-                <a href="/shope" onClick={closeMobileMenu}>
-                  शॉप 
-                </a>
+                <NavLink
+                  to="/shope"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "dropdown-link active-menu-item"
+                      : "dropdown-link"
+                  }
+                  onClick={closeAllMenus}
+                >
+                  शॉप
+                </NavLink>
 
-                <a href="/checkout" onClick={closeMobileMenu}>
-                  चेकऊट
-                </a>
-                 <a href="/cart" onClick={closeMobileMenu}>
+                <NavLink
+                  to="/checkout"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "dropdown-link active-menu-item"
+                      : "dropdown-link"
+                  }
+                  onClick={closeAllMenus}
+                >
+                  चेकआउट
+                </NavLink>
+
+                <NavLink
+                  to="/cart"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "dropdown-link active-menu-item"
+                      : "dropdown-link"
+                  }
+                  onClick={closeAllMenus}
+                >
                   कार्ट
-                </a>
+                </NavLink>
               </div>
             )}
           </div>
 
-          <a
-            href="/result"
-            className="nav-link result-link"
-            onClick={closeMobileMenu}
+          <NavLink
+            to="/result"
+            className={({ isActive }) => {
+              if (isActive && !accountMenuOpen) {
+                return "nav-link result-link active-link";
+              }
+
+              return "nav-link result-link";
+            }}
+            onClick={closeAllMenus}
           >
             STS 25–26 Result
-          </a>
+          </NavLink>
         </nav>
       </div>
     </header>

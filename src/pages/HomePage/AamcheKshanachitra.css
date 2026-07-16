@@ -1,6 +1,6 @@
 .moment-gallery-section {
   width: 100%;
-  padding: 10px 0 42px;
+  padding: 10px 0 50px;
   background: #ffffff;
   overflow: hidden;
 }
@@ -35,18 +35,49 @@
   line-height: 1.5;
 }
 
-/* Gallery */
+/* Two gallery rows */
+
+.moment-gallery-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
 
 .moment-gallery-wrapper {
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
+  overflow: hidden;
+  position: relative;
 }
 
-.moment-gallery-wrapper::-webkit-scrollbar {
-  display: none;
+/* Optional side fade */
+
+.moment-gallery-wrapper::before,
+.moment-gallery-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.moment-gallery-wrapper::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.moment-gallery-wrapper::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .moment-gallery-track {
@@ -54,16 +85,26 @@
   align-items: stretch;
   gap: 28px;
   width: max-content;
-  padding: 0 42px 12px;
+  padding: 0 14px;
+  will-change: transform;
+}
+
+.moment-gallery-track-left-to-right {
+  animation: momentScrollLeftToRight 35s linear infinite;
+}
+
+.moment-gallery-track-slow {
+  animation-duration: 42s;
 }
 
 .moment-gallery-card {
-  width: clamp(360px, 34vw, 470px);
-  height: 345px;
+  width: clamp(360px, 30vw, 470px);
+  height: 330px;
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 13px;
   background: #f1f1f1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .moment-gallery-image {
@@ -72,11 +113,34 @@
   display: block;
   object-fit: cover;
   transition:
-    transform 0.45s ease,
-    filter 0.45s ease;
+  transform 0.45s ease,
+  filter 0.45s ease;
 }
 
-.moment-gallery-card:hover .moment-gallery-image {
-  transform: scale(1.04);
-  filter: brightness(0.96);
+.moment-gallery-track-left-to-right {
+  animation: momentScrollLeftToRight 35s linear infinite;
+}
+
+.moment-gallery-track-right-to-left {
+  animation: momentScrollRightToLeft 42s linear infinite;
+}
+
+@keyframes momentScrollLeftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes momentScrollRightToLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
