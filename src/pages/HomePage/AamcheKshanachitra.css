@@ -13,34 +13,34 @@
 
 .moment-gallery-heading h2 {
   margin: 0;
-  color: #050505;
+  font-family: "Rozha One", serif;
+  color: #000000;
   font-size: clamp(36px, 4vw, 54px);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
 }
 
 .moment-gallery-description {
   margin: 8px auto 0;
-  color: #111111;
-  font-size: clamp(21px, 2.15vw, 30px);
-  font-weight: 500;
+  font-family: "Gotu", sans-serif;
+  color: #000000;
+  font-size: clamp(21px, 1.8vw, 30px);
+  font-weight: 700;
   line-height: 1.45;
 }
 
 .moment-gallery-subtitle {
   margin: 18px auto 0;
-  color: #111111;
-  font-size: clamp(16px, 1.55vw, 21px);
+  color: #000000;
+  font-size: clamp(16px, 1.4vw, 21px);
   font-weight: 600;
   line-height: 1.5;
 }
 
-/* Two gallery rows */
-
 .moment-gallery-rows {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 35px;
 }
 
 .moment-gallery-wrapper {

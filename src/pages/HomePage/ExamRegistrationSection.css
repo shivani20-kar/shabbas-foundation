@@ -1,0 +1,125 @@
+.exam-registration-section {
+  width: 100%;
+  padding: 15px 20px 55px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.exam-registration-container {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+}
+
+.exam-registration-heading {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.exam-registration-heading h2 {
+  margin: 0;
+  color: #000000;
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.exam-registration-heading p {
+  margin: 8px 0 0;
+  color: #050505;
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: clamp(20px, 2vw, 29px);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.exam-registration-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.exam-card {
+  position: relative;
+  min-height: 328px;
+  padding: 45px 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #06386b;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.exam-card-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.regular-registration-card {
+  justify-content: flex-end;
+}
+
+.regular-registration-card .exam-card-content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.late-registration-card {
+  justify-content: flex-start;
+}
+
+.late-registration-card .exam-card-content {
+  width: 68%;
+  margin-right: auto;
+}
+
+.exam-card h3 {
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: clamp(21px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.exam-highlight {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: clamp(25px, 2.4vw, 34px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.exam-note {
+  margin: 8px 0 0;
+  color: #ffffff;
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: clamp(22px, 2.1vw, 30px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.exam-student-image {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.boy-image {
+  left: 0;
+  width: 37%;
+  max-height: 92%;
+}
+
+.girl-image {
+  right: 0;
+  width: 42%;
+  max-height: 92%;
+}
