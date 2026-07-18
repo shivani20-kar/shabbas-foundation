@@ -1,0 +1,154 @@
+.prernadayiVideo {
+  width: 100%;
+  padding: 8vh 0;
+  background: #fff;
+}
+
+/* ================= TOP ================= */
+
+.prernadayiVideoTop {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.prernadayiVideoImageBox {
+  width: 35vw;
+  height: 42vh;
+  overflow: hidden;
+  border-top-left-radius: 4vw;
+}
+
+.prernadayiVideoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prernadayiVideoContent {
+  width: 30vw;
+  height: 42vh;
+  background: #0b3b72;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 3vw;
+
+  border-bottom-right-radius: 4vw;
+}
+
+.prernadayiVideoTitle {
+  color: #fff;
+  font-family: "Rozha One", serif;
+  font-size: 2.8vw;
+  margin-bottom: 2vh;
+}
+
+.prernadayiVideoText {
+  color: #fff;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.45vw;
+  line-height: 2.3vw;
+}
+
+/* ================= Cards ================= */
+
+.prernadayiVideoCards {
+  width: 82vw;
+  margin: 8vh auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4vh 2vw;
+}
+
+.prernadayiVideoCard {
+  width: 24vw;
+  text-align: center;
+}
+
+.prernadayiVideoCard:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.prernadayiVideoCard:nth-child(2) {
+  grid-column: 3 / span 2;
+}
+
+.prernadayiVideoCard:nth-child(3) {
+  grid-column: 5 / span 2;
+}
+
+.prernadayiVideoCard:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.prernadayiVideoCard:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.prernadayiVideoThumb {
+  width: 24vw;
+  height: 45vh;
+
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  background: #252525;
+
+  border-top-left-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+}
+
+.prernadayiVideoThumbImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prernadayiVideoPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 4vw;
+  height: 4vw;
+
+  border: 0.18vw solid #fff;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 1.7vw;
+  font-weight: bold;
+
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.prernadayiVideoCard h3 {
+  margin-top: 2vh;
+  font-family: "Rozha One", serif;
+  font-size: 1.7vw;
+  color: #111;
+}
+
+.prernadayiVideoCard p {
+  margin-top: 0.8vh;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  color: #333;
+}
+
+.prernadayiVideoCard a {
+  text-decoration: none;
+}

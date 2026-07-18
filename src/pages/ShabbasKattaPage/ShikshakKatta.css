@@ -1,6 +1,6 @@
 .shikshakkatta {
   width: 100%;
-  padding: 10vh 0;
+  padding: 8vh 0 0;
   background: #ffffff;
 }
 
@@ -46,8 +46,9 @@
 .shikshakkattaText {
   font-family: "Gotu", sans-serif;
   color: #fff;
-  font-size: 1.6vw;
-  line-height: 2.8vw;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  font-weight: 400;
 }
 
 /* ---------------- Videos ---------------- */
@@ -71,8 +72,9 @@
   height: 60vh;
   position: relative;
   overflow: hidden;
-  border-radius: 2vw;
   cursor: pointer;
+  border-top-left-radius: 4vw;
+  border-bottom-right-radius: 4vw;
 }
 
 .shikshakkattaVideoImage {
@@ -81,8 +83,6 @@
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
-  border-top-right-radius: 6vw;
-  border-bottom-left-radius: 6vw;
 }
 
 .shikshakkattaPlay {
@@ -103,7 +103,7 @@
 
 .shikshakkattaCard h3 {
   margin-top: 2vh;
-  font-family: "Rozha One", serif;
+  font-family: "Gotu", sans-serif;
   font-size: 1.8vw;
   color: #000;
 }
