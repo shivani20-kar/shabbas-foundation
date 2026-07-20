@@ -1,0 +1,80 @@
+.aboutBenefits {
+  width: 100%;
+  background: #fff;
+  padding: 6vh 0;
+}
+
+.aboutBenefitsContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+.aboutBenefitsTitle {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000000;
+  margin-bottom: 1vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.aboutBenefitsSubtitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  color: #000000;
+  margin-bottom: 4vh;
+  text-align: center;
+  font-weight: 500;
+}
+
+.aboutBenefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vh 1.5vw;
+}
+
+.aboutBenefitsCard {
+  background: #023061;
+  color: #fff;
+  border-radius: 0.6vw;
+  padding: 2vw;
+  min-height: 24vh;
+}
+
+.aboutBenefitsIcon {
+  width: 3vw;
+  height: 3vw;
+  background: #fff8f0;
+  border-radius: 0.45vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ff9500;
+  font-size: 1.3vw;
+
+  margin-bottom: 2vh;
+}
+
+.aboutBenefitsCard h3 {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-bottom: 2vh;
+  color: #ffffff;
+}
+
+.aboutBenefitsCard p {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #dbdbdb;
+}
+
+.aboutBenefitsLastCard {
+  width: 52%;
+  margin: auto;
+  grid-column: 1 / 3;
+}

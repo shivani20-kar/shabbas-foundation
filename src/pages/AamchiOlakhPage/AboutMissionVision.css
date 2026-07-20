@@ -1,0 +1,108 @@
+.aboutMissionVision {
+  width: 100%;
+  background: #fff;
+  padding: 6vh 0;
+}
+
+.aboutMissionVisionContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= Header ================= */
+
+.aboutMissionVisionHeader {
+  text-align: center;
+  margin-bottom: 8vh;
+}
+
+.aboutMissionVisionMainTitle {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000000;
+  margin-bottom: 1vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.aboutMissionVisionMainSubtitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  color: #000000;
+  margin-bottom: 4vh;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ================= Rows ================= */
+
+.aboutMissionVisionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+  margin-bottom: 5vh;
+}
+
+.aboutMissionVisionReverse {
+  flex-direction: row;
+}
+
+/* ================= Images ================= */
+
+.aboutMissionVisionLeft {
+  width: 40vw;
+}
+
+.aboutMissionVisionImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2vw;
+  display: block;
+}
+
+/* ================= Content ================= */
+
+.aboutMissionVisionRight {
+  width: 42vw;
+}
+
+.aboutMissionVisionHeading {
+  font-family: "Rozha One", serif;
+  font-size: 2.8vw;
+  color: #000000;
+  margin-bottom: 2vh;
+}
+
+.aboutMissionVisionQuote {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  line-height: 2.8vw;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+
+.aboutMissionVisionText {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.35vw;
+  line-height: 2.2vw;
+  color: #222;
+}
+
+.aboutMissionVisionText strong {
+  font-weight: 700;
+}
+
+.aboutMissionVisionRow:last-child {
+  margin-bottom: 0;
+}
+
+.aboutMissionVisionHeading {
+  line-height: 1.2;
+}
+
+.aboutMissionVisionText {
+  text-align: justify;
+}

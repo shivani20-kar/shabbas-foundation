@@ -1,0 +1,127 @@
+.contactForm {
+  width: 100%;
+  padding: 0 0 10vh 0;
+  background: #fff;
+}
+
+/* ================= Container ================= */
+
+.contactFormContainer {
+  /* width: 90vw; */
+  padding: 0 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4vw;
+}
+
+/*================ LEFT ================*/
+
+.contactFormLeft {
+  width: 40vw;
+}
+
+.contactFormTitle {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 3vh;
+}
+
+.contactFormText {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 600;
+}
+
+/*================ RIGHT ================*/
+
+.contactFormRight {
+  width: 40vw;
+}
+
+.contactFormBox {
+  width: 100%;
+  box-sizing: border-box;
+
+  background: #f1f2f4;
+
+  border: 0.12vw solid #b8b8b8;
+  border-radius: 2vw;
+
+  padding: 2.8vw 3vw;
+}
+
+/*================ Fields ================*/
+
+.contactFormField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5vh;
+}
+
+.contactFormField label {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.25vw;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1vh;
+}
+
+.contactFormField input,
+.contactFormField textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+
+  background: #fff;
+
+  border-radius: 0.9vw;
+
+  padding: 1vw 1.3vw;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.1vw;
+  color: #333;
+}
+
+.contactFormField input {
+  height: 6.5vh;
+}
+
+.contactFormField textarea {
+  resize: none;
+  height: 20vh;
+  padding-top: 1.2vw;
+}
+
+.contactFormField input::placeholder,
+.contactFormField textarea::placeholder {
+  color: #b8bec9;
+}
+
+/*================ Button ================*/
+
+.contactFormButton {
+  width: 100%;
+  height: 6.8vh;
+  border: none;
+  outline: none;
+  border-radius: 2vw;
+  background: #023061;
+  color: #fff;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2vh;
+  transition: 0.3s ease;
+}
+
+.contactFormButton:hover {
+  background: #0b3157;
+}

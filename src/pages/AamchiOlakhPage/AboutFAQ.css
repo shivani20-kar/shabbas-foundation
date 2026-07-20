@@ -1,0 +1,249 @@
+.aboutFaqSection {
+  width: 100%;
+  padding: 0 0 8vh;
+  background: #fff;
+}
+
+.aboutFaqContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= Heading ================= */
+
+.aboutFaqHeading {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000000;
+  margin-bottom: 1vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.aboutFaqSubHeading {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  color: #000000;
+  margin-bottom: 4vh;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ================= Wrapper ================= */
+
+.aboutFaqWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+
+/* ================= Card ================= */
+
+.aboutFaqCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5vw;
+  background: #ffffff;
+  box-shadow: 0 0.5vw 1.8vw rgba(0, 0, 0, 0.08);
+  transition: all 0.45s ease;
+}
+
+.aboutFaqCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 0.12vw;
+  border-radius: inherit;
+
+  background: linear-gradient(135deg, #0b3b72, #2f89ff, #5da9ff, #0b3b72);
+
+  background-size: 300% 300%;
+
+  animation: faqBorder 6s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.aboutFaqCard:hover::before {
+  opacity: 1;
+}
+
+.aboutFaqCard:hover {
+  transform: translateY(-0.5vh);
+  box-shadow: 0 1vw 2.8vw rgba(11, 59, 114, 0.18);
+}
+/* ================= Question ================= */
+
+.aboutFaqQuestion {
+  width: 100%;
+  padding: 2.4vh 2vw;
+  font-size: 1.8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  background: transparent;
+
+  transition: color 0.35s ease;
+}
+
+.aboutFaqCard:hover .aboutFaqQuestion {
+  background: transparent;
+}
+
+.aboutFaqQuestion span {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.45vw;
+  font-weight: 600;
+  color: #111;
+  transition: color 0.35s ease;
+}
+
+.aboutFaqCard:hover .aboutFaqQuestion span {
+  color: #0b3b72;
+}
+
+/* ================= Icon ================= */
+
+.aboutFaqIcon {
+  position: relative;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  background: #023061;
+  flex-shrink: 0;
+  transition: 0.4s;
+}
+
+.aboutFaqHorizontal,
+.aboutFaqVertical {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  transition: 0.35s;
+}
+
+.aboutFaqHorizontal {
+  width: 1vw;
+  height: 0.18vw;
+}
+
+.aboutFaqVertical {
+  width: 0.18vw;
+  height: 1vw;
+}
+
+.aboutFaqCard:hover .aboutFaqIcon {
+  background: #023061;
+  transform: rotate(180deg) scale(1.08);
+}
+
+.aboutFaqCard:hover .aboutFaqVertical {
+  opacity: 0;
+}
+
+/* ================= Answer ================= */
+
+.aboutFaqAnswer {
+  max-height: 0;
+  overflow: hidden;
+
+  background: transparent;
+
+  transition:
+    max-height 0.55s ease,
+    padding 0.35s ease,
+    background 0.35s ease;
+}
+
+.aboutFaqCard:hover .aboutFaqAnswer {
+  max-height: 30vh;
+
+  padding: 0 2vw 2.4vh;
+
+  background: linear-gradient(135deg, #eef7ff 0%, #d8ebff 55%, #f8fbff 100%);
+
+  border-top: 0.08vw solid rgba(11, 59, 114, 0.08);
+}
+
+/* ================= Text ================= */
+
+.aboutFaqAnswer p {
+  margin: 0;
+  padding-top: 2vh;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #0b3157;
+
+  opacity: 0;
+  transform: translateY(1vh);
+
+  transition: 0.45s;
+}
+
+.aboutFaqCard:hover .aboutFaqAnswer p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= List ================= */
+
+.aboutFaqList {
+  margin: 0;
+  padding: 2vh 0 0 1.8vw;
+
+  list-style: disc;
+
+  opacity: 0;
+  transform: translateY(1vh);
+
+  transition: 0.45s;
+}
+
+.aboutFaqCard:hover .aboutFaqList {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aboutFaqList li {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #0b3157;
+  margin-bottom: 0.7vh;
+}
+
+/* ================= Animation ================= */
+
+@keyframes faqBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

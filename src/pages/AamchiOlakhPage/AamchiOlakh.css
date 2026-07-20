@@ -1,0 +1,73 @@
+.aboutAamchiOlakh {
+  width: 100%;
+  background: #fff;
+  padding: 8vh 0 0;
+}
+
+.aboutAamchiOlakhContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= Heading ================= */
+
+.aboutAamchiOlakhTitle {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 1vh;
+}
+
+.aboutAamchiOlakhSubtitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 2vh;
+}
+
+.aboutAamchiOlakhTopText {
+  width: 82vw;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  line-height: 2.25vw;
+  color: #111;
+  font-weight: 600;
+  margin-bottom: 5vh;
+}
+
+/* ================= Image ================= */
+
+.aboutAamchiOlakhImageBox {
+  width: 85vw;
+  height: 58vh;
+  overflow: hidden;
+  border-radius: 2vw;
+  margin-bottom: 6vh;
+}
+
+.aboutAamchiOlakhImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= Bottom Content ================= */
+
+.aboutAamchiOlakhBottomContent {
+  padding: 0 14vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.aboutAamchiOlakhBottomContent p {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  line-height: 2.25vw;
+  color: #111;
+  margin-bottom: 2.8vh;
+  font-weight: 600;
+}
