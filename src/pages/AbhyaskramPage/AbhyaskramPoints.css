@@ -1,0 +1,75 @@
+.abhyaskramPointsSection {
+  width: 100%;
+  padding: 0 0 8vh 0;
+  background: #ffffff;
+}
+
+.abhyaskramPointsContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/*================ Top Row ================*/
+
+.abhyaskramPointsRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-bottom: 5vh;
+}
+
+/*================ Bottom Row ================*/
+
+.abhyaskramPointsBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*================ Common Card ================*/
+
+.abhyaskramPointsCard {
+  width: 40vw; /* Same width for all three cards */
+  height: 10vh;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3vw 2vw;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  border-radius: 5vw;
+
+  font-family: "Gotu", serif;
+  font-size: 1.5vw;
+  line-height: 1.3;
+  color: #000000;
+
+  box-shadow: 0 0.45vw 1vw rgba(0, 0, 0, 0.15);
+
+  transition: all 0.35s ease;
+}
+
+.abhyaskramPointsCard:hover {
+  transform: translateY(-0.3vh);
+  box-shadow: 0 0.8vw 1.8vw rgba(0, 0, 0, 0.18);
+}
+
+/*================ Background Colors ================*/
+
+.abhyaskramPointsYellow {
+  background: #fdc700;
+}
+
+.abhyaskramPointsBlue {
+  background: #8dbeff;
+}
+
+.abhyaskramPointsPink {
+  background: #ff81f4;
+}

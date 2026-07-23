@@ -19,6 +19,20 @@ import AamchiOlakh from "./pages/AamchiOlakhPage/AamchiOlakh";
 import AboutBenefits from "./pages/AamchiOlakhPage/AboutBenefits";
 import AboutMissionVision from "./pages/AamchiOlakhPage/AboutMissionVision";
 import AboutFAQ from "./pages/AamchiOlakhPage/AboutFAQ";
+import AbhyaskramHero from "./pages/AbhyaskramPage/AbhyaskramHero";
+import AbhyaskramCurriculum from "./pages/AbhyaskramPage/AbhyaskramCurriculum";
+import AbhyaskramExamPattern from "./pages/AbhyaskramPage/AbhyaskramExamPattern";
+import AbhyaskramQuestionTable from "./pages/AbhyaskramPage/AbhyaskramQuestionTable";
+import AbhyaskramQuestionTable2 from "./pages/AbhyaskramPage/AbhyaskramQuestionTable2";
+import AbhyaskramRules from "./pages/AbhyaskramPage/AbhyaskramRules";
+import AbhyaskramExamDate from "./pages/AbhyaskramPage/AbhyaskramExamDate";
+import AbhyaskramInterviewPreparation from "./pages/AbhyaskramPage/AbhyaskramInterviewPreparation";
+import AbhyaskramScholarship from "./pages/AbhyaskramPage/AbhyaskramScholarship";
+import AbhyaskramDistrictAward from "./pages/AbhyaskramPage/AbhyaskramDistrictAward";
+import AbhyaskramMulakhat from "./pages/AbhyaskramPage/AbhyaskramMulakhat";
+import AbhyaskramReferenceBooks from "./pages/AbhyaskramPage/AbhyaskramReferenceBooks";
+import AbhyaskramMarquee from "./pages/AbhyaskramPage/AbhyaskramMarquee";
+import AbhyaskramPoints from "./pages/AbhyaskramPage/AbhyaskramPoints";
 
 /* Scroll to Top on every route change */
 function ScrollToTop() {
@@ -79,6 +93,27 @@ function App() {
                 <AboutBenefits />
                 <AboutMissionVision />
                 <AboutFAQ />
+              </>
+            }
+          />
+
+          <Route
+            path="/courses"
+            element={
+              <>
+                <AbhyaskramHero />
+                <AbhyaskramExamPattern />
+                <AbhyaskramQuestionTable />
+                <AbhyaskramQuestionTable2 />
+                <AbhyaskramRules />
+                <AbhyaskramExamDate />
+                <AbhyaskramInterviewPreparation />
+                <AbhyaskramScholarship />
+                <AbhyaskramMarquee />
+                <AbhyaskramDistrictAward />
+                <AbhyaskramMulakhat />
+                <AbhyaskramReferenceBooks />
+                <AbhyaskramPoints />
               </>
             }
           />

@@ -1,0 +1,309 @@
+.abhyaskramReferenceSection {
+  width: 100%;
+  padding: 0 0 8vh 0;
+  background: #ffffff;
+}
+
+.abhyaskramReferenceContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/*================ Heading ================*/
+
+.abhyaskramReferenceHeadingWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 2vh;
+}
+
+.abhyaskramReferenceHeading {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 0vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.abhyaskramReferenceGif {
+  width: 10vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.abhyaskramReferenceDescription {
+  width: 72vw;
+  margin: 0 auto 6vh;
+  text-align: center;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #222;
+}
+
+/*================ Grid ================*/
+
+.abhyaskramReferenceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2vw;
+  margin-bottom: 5vh;
+}
+
+/*================ Card ================*/
+
+.abhyaskramReferenceCard {
+  background: #fff;
+  border-radius: 1vw;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.15);
+  transition: 0.35s ease;
+}
+
+.abhyaskramReferenceCard:hover {
+  transform: translateY(-0.4vh);
+  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+/*================ Card Header ================*/
+
+.abhyaskramReferenceCardHeader {
+  padding: 2vh 2vw;
+  text-align: center;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.6vw;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+}
+
+/*================ Card Body ================*/
+
+.abhyaskramReferenceCardBody {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  min-height: 26vh;
+
+  padding: 2vh 2vw;
+}
+
+.abhyaskramReferenceCardBody ul {
+  margin: 0;
+  padding-left: 1.3vw;
+}
+
+.abhyaskramReferenceCardBody li {
+  margin-bottom: 1.2vh;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.7;
+  color: #000;
+  font-weight: 600;
+}
+
+/*================ Study Outcome Card ================*/
+
+.abhyaskramReferenceSubtitle {
+  margin: 0 0 2vh;
+  text-align: center;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #111;
+}
+
+.abhyaskramReferenceTwoCol {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
+.abhyaskramReferenceTwoCol ul {
+  width: 50%;
+  margin: 0;
+  padding-left: 1.2vw;
+}
+
+.abhyaskramReferenceTwoCol li {
+  margin-bottom: 1vh;
+  font-weight: 600;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.7;
+}
+
+/*================ Footer ================*/
+
+.abhyaskramReferenceFooter {
+  margin-top: auto;
+  font-weight: 600;
+  padding: 2vh 2vw;
+
+  background: #ffd1291a;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.15vw;
+  line-height: 1.6;
+
+  border-top: 0.08vw solid #ececec;
+}
+
+.abhyaskramReferenceFooter a {
+  color: #0066ff;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+/*================ Bottom Card ================*/
+
+.abhyaskramReferenceBottomCard {
+  width: 45vw;
+  margin: auto;
+
+  background: #fff;
+
+  border-radius: 1vw;
+  overflow: hidden;
+
+  box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.15);
+}
+
+.abhyaskramReferenceBottomHeader {
+  background: #c8bcfe;
+
+  padding: 2vh;
+
+  text-align: center;
+
+  font-family: "Rozha One", serif;
+  font-size: 2vw;
+  color: #111;
+}
+
+.abhyaskramReferenceBottomBody {
+  padding: 2vh 2vw;
+}
+
+.abhyaskramReferenceBottomBody ul {
+  margin: 1vh 0;
+  padding-left: 1.2vw;
+}
+
+.abhyaskramReferenceBottomBody li {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  color: #000;
+  font-weight: 600;
+}
+
+.abhyaskramReferenceBottomBody a {
+  display: block;
+  margin-bottom: 1.5vh;
+
+  color: #0066ff;
+  text-decoration: underline;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.35vw;
+}
+
+.abhyaskramReferenceBottomFooter {
+  padding: 1.8vh;
+
+  background: #ffd1291a;
+
+  text-align: center;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.15vw;
+  line-height: 1.6;
+  color: #222;
+  font-weight: 600;
+}
+
+/*================ Responsive ================*/
+
+@media (max-width: 768px) {
+  .abhyaskramReferenceHeading {
+    font-size: 7vw;
+  }
+
+  .abhyaskramReferenceGif {
+    width: 12vw;
+  }
+
+  .abhyaskramReferenceDescription {
+    width: 100%;
+    font-size: 3.8vw;
+    line-height: 6vw;
+  }
+
+  .abhyaskramReferenceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .abhyaskramReferenceCardHeader {
+    font-size: 5vw;
+  }
+
+  .abhyaskramReferenceCardBody {
+    min-height: auto;
+  }
+
+  .abhyaskramReferenceCardBody li {
+    font-size: 3.7vw;
+  }
+
+  .abhyaskramReferenceSubtitle {
+    font-size: 3.5vw;
+  }
+
+  .abhyaskramReferenceTwoCol {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .abhyaskramReferenceTwoCol ul {
+    width: 100%;
+    padding-left: 5vw;
+  }
+
+  .abhyaskramReferenceFooter {
+    font-size: 3.6vw;
+  }
+
+  .abhyaskramReferenceBottomCard {
+    width: 100%;
+  }
+
+  .abhyaskramReferenceBottomHeader {
+    font-size: 6vw;
+  }
+
+  .abhyaskramReferenceBottomBody li,
+  .abhyaskramReferenceBottomFooter {
+    font-size: 3.5vw;
+  }
+
+  .abhyaskramReferenceBottomBody a {
+    font-size: 4vw;
+  }
+}

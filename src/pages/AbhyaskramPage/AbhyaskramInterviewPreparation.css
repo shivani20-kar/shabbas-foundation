@@ -1,0 +1,89 @@
+.abhyaskramInterviewSection {
+  width: 100%;
+  padding: 8vh 0;
+  background: #ffffff;
+}
+
+.abhyaskramInterviewContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= Block ================= */
+
+.abhyaskramInterviewBlock {
+  margin-bottom: 10vh;
+}
+
+.abhyaskramInterviewBlock:last-child {
+  margin-bottom: 0;
+}
+
+/* ================= Heading ================= */
+
+.abhyaskramInterviewHeading {
+  margin-bottom: 4vh;
+  font-family: "Rozha One", serif;
+  font-size: 2.2vw;
+  text-align: center;
+  color: #000;
+  line-height: 1;
+}
+
+/* ================= Card ================= */
+
+.abhyaskramInterviewCard {
+  width: 100%;
+  background: #06366c;
+  border-radius: 1.6vw;
+  padding: 5vh 3vw;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 0.6vw 1.8vw rgba(0, 0, 0, 0.18);
+}
+
+/* ================= Column ================= */
+
+.abhyaskramInterviewColumn {
+  width: 48%;
+}
+
+/* ================= Title ================= */
+
+.abhyaskramInterviewTitle {
+  font-family: "Rozha One", serif;
+  font-size: 2vw;
+  color: #ffffff;
+  margin-bottom: 2.5vh;
+}
+
+/* ================= List ================= */
+
+.abhyaskramInterviewList {
+  margin: 0;
+  padding-left: 1.5vw;
+}
+
+.abhyaskramInterviewList li {
+  color: #ffffff;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  margin-bottom: 1vh;
+}
+
+.abhyaskramInterviewList li:last-child {
+  margin-bottom: 0;
+}
+
+/* ================= Hover ================= */
+
+.abhyaskramInterviewCard {
+  transition: 0.35s;
+}

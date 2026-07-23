@@ -1,0 +1,227 @@
+.abhyaskramDistrictAwardSection {
+  width: 100%;
+  padding: 0 0 8vh 0;
+  background: #ffffff;
+}
+
+.abhyaskramDistrictAwardContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= Heading ================= */
+
+.abhyaskramDistrictAwardHeadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 4vh;
+}
+
+.abhyaskramDistrictAwardGif {
+  /* width: 5vw;
+  height: auto; */
+  object-fit: contain;
+}
+
+.abhyaskramDistrictAwardHeading {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 0vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ================= District Cards ================= */
+
+.abhyaskramDistrictAwardCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-bottom: 0vh;
+}
+
+.abhyaskramDistrictAwardCard {
+  width: 31%;
+  background: #fff;
+  border: 0.08vw solid #dddddd;
+  border-radius: 1vw;
+  padding: 3vh 2vw;
+  text-align: center;
+  transition: 0.35s;
+  box-shadow: 0 0.2vw 0.8vw rgba(0, 0, 0, 0.08);
+}
+
+.abhyaskramDistrictAwardCard:hover {
+  transform: translateY(-0.4vh);
+  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.15);
+}
+
+.abhyaskramDistrictAwardCardImage {
+  width: 6vw;
+  height: auto;
+  margin-bottom: 0vh;
+}
+
+.abhyaskramDistrictAwardCardTitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 2.2vw;
+  color: #000;
+  margin-bottom: 1vh;
+  font-weight: 700;
+}
+
+.abhyaskramDistrictAwardCardSubtitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+/* ================= Trophy ================= */
+
+.abhyaskramDistrictAwardTrophySection {
+  text-align: center;
+  margin-bottom: 6vh;
+}
+
+.abhyaskramDistrictAwardTrophyImage {
+  width: 30vw;
+  display: block;
+  margin: auto;
+}
+
+.abhyaskramDistrictAwardLine {
+  width: 18vw;
+  height: 0.08vw;
+  background: #cfd7e3;
+  margin: 2vh auto;
+}
+
+.abhyaskramDistrictAwardTrophyHeading {
+  font-family: "Rozha One", serif;
+  font-size: 2.5vw;
+  margin-bottom: 3vh;
+  margin-top: -2vw;
+  color: #000;
+}
+
+.abhyaskramDistrictAwardPoints {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin-bottom: 3vh;
+}
+
+.abhyaskramDistrictAwardPoints span {
+  font-family: "Gotu", sans-serif;
+  font-size: 3vw;
+  color: #000000;
+  font-weight: 700;
+}
+
+.abhyaskramDistrictAwardDescription {
+  text-align: center;
+}
+
+.abhyaskramDistrictAwardDescription p {
+  margin: 0.8vh 0;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.8vw;
+  line-height: 2.35vw;
+  color: #000;
+  font-weight: 700;
+}
+
+/* ================= Interview ================= */
+
+.abhyaskramDistrictAwardInterview {
+  text-align: center;
+}
+
+.abhyaskramDistrictAwardInterviewHeading {
+  font-family: "Rozha One", serif;
+  color: #000;
+  margin-bottom: 2vh;
+  font-size: 3.5vw;
+}
+
+.abhyaskramDistrictAwardInterviewSubHeading {
+  margin: auto;
+  line-height: 2vw;
+  margin-bottom: 4vh;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.6vw;
+  color: #000;
+  font-weight: 700;
+}
+
+/* ================= Skill Cards ================= */
+
+.abhyaskramDistrictAwardSkillGrid {
+  display: flex;
+  justify-content: center;
+  gap: 1.3vw;
+  margin-bottom: 5vh;
+  flex-wrap: wrap;
+}
+
+.abhyaskramDistrictAwardSkillCard {
+  width: 12vw;
+  min-height: 15vh;
+  background: #fff;
+  border-radius: 0.8vw;
+  box-shadow: 0 0.25vw 1vw rgba(0, 0, 0, 0.15);
+  border: 0.08vw solid #ececec;
+  padding: 2vh 0.8vw;
+  transition: 0.35s;
+}
+
+.abhyaskramDistrictAwardSkillIcon {
+  width: 1.8vw;
+  margin-bottom: 1.5vh;
+}
+
+.abhyaskramDistrictAwardSkillCard h4 {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  color: #0c3d78;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* ================= Button ================= */
+
+.abhyaskramDistrictAwardButton {
+  width: 50vw;
+  height: 10vh;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  background: #ff6e00;
+  color: #fff;
+
+  border-radius: 1vw;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 600;
+
+  transition: 0.35s;
+}
+
+/* .abhyaskramDistrictAwardButton:hover {
+  background: #ff861d;
+  transform: translateY(-0.25vh);
+} */

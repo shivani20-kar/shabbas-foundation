@@ -1,0 +1,114 @@
+.abhyaskramQuestionTableSection {
+  width: 100%;
+  padding: 8vh 0 0;
+  background: #ffffff;
+}
+
+.abhyaskramQuestionTableContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= GIF ================= */
+
+.abhyaskramQuestionTableImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0vh;
+}
+
+.abhyaskramQuestionTableImage {
+  width: 8vw;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ================= Heading ================= */
+
+.abhyaskramQuestionTableHeading {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 1vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.abhyaskramQuestionTableSubHeading {
+  font-family: "Rozha One", serif;
+  font-size: 2.2vw;
+  text-align: center;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 5vh;
+}
+
+/* ================= Table ================= */
+
+.abhyaskramQuestionTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 1vw;
+  box-shadow: 0 0.6vw 2vw rgba(0, 0, 0, 0.08);
+}
+
+.abhyaskramQuestionTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1200px;
+}
+
+.abhyaskramQuestionTable thead th {
+  background: #023061;
+  color: #ffffff;
+  padding: 2vh 1vw;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  border: 0.08vw solid rgba(255, 255, 255, 0.25);
+}
+
+.abhyaskramQuestionTable tbody td {
+  padding: 3vh 1vw;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.1vw;
+  line-height: 1.8vw;
+  color: #000;
+  border: 0.08vw solid #d8d8d8;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.abhyaskramQuestionTable tbody tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+.abhyaskramQuestionTable tbody tr:hover td {
+  background: #eef5ff;
+}
+
+.abhyaskramQuestionTableBold {
+  font-weight: 700;
+  color: #023061;
+}
+
+/* ================= Scroll ================= */
+
+.abhyaskramQuestionTableWrapper::-webkit-scrollbar {
+  height: 0.6vw;
+}
+
+.abhyaskramQuestionTableWrapper::-webkit-scrollbar-thumb {
+  background: #023061;
+  border-radius: 2vw;
+}
+
+.abhyaskramQuestionTableWrapper::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}

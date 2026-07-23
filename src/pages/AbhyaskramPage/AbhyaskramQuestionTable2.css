@@ -1,0 +1,96 @@
+.abhyaskramQuestionTable2Section {
+  width: 100%;
+  padding: 6vh 0 8vh;
+  background: #ffffff;
+}
+
+.abhyaskramQuestionTable2Container {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.abhyaskramQuestionTable2Heading {
+  font-family: "Rozha One", serif;
+  font-size: 2.2vw;
+  text-align: center;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 5vh;
+}
+
+/* Table */
+
+.abhyaskramQuestionTable2Wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 1vw;
+  box-shadow: 0 0.6vw 2vw rgba(0, 0, 0, 0.08);
+}
+
+.abhyaskramQuestionTable2 {
+  width: 100%;
+  min-width: 1500px;
+  border-collapse: collapse;
+}
+
+.abhyaskramQuestionTable2 thead th {
+  background: #023061;
+  color: #fff;
+  padding: 2vh 1vw;
+  border: 0.08vw solid rgba(255, 255, 255, 0.25);
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.abhyaskramQuestionTable2 tbody td {
+  padding: 3vh 0.8vw;
+
+  text-align: center;
+  vertical-align: middle;
+
+  border: 0.08vw solid #d9d9d9;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.1vw;
+  line-height: 2vw;
+
+  color: #111;
+
+  background: #ffffff;
+
+  transition: 0.3s;
+}
+
+.abhyaskramQuestionTable2 tbody tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+.abhyaskramQuestionTable2 tbody tr:hover td {
+  background: #eef5ff;
+}
+
+.abhyaskramQuestionTable2Bold {
+  font-weight: 700;
+  color: #023061;
+}
+
+/* Scrollbar */
+
+.abhyaskramQuestionTable2Wrapper::-webkit-scrollbar {
+  height: 0.6vw;
+}
+
+.abhyaskramQuestionTable2Wrapper::-webkit-scrollbar-thumb {
+  background: #023061;
+  border-radius: 2vw;
+}
+
+.abhyaskramQuestionTable2Wrapper::-webkit-scrollbar-track {
+  background: #ececec;
+}

@@ -1,0 +1,152 @@
+.abhyaskramHeroSection {
+  width: 100%;
+  padding: 8vh 0;
+  background: #ffffff;
+}
+
+.abhyaskramHeroContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= Heading ================= */
+
+.abhyaskramHeroMainHeading {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 1vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ================= Intro Card ================= */
+
+.abhyaskramHeroIntroCard {
+  margin: 0 auto 8vh;
+  background: #ffffff;
+  border-radius: 1.4vw;
+  padding: 4vh 3vw;
+  text-align: center;
+  box-shadow: 0 0.5vw 1.8vw rgba(0, 0, 0, 0.12);
+}
+
+.abhyaskramHeroIntroTitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.abhyaskramHeroIntroText {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.4vw;
+  line-height: 2.35vw;
+  color: #000;
+  font-weight: 500;
+}
+
+/* ================= Content ================= */
+
+.abhyaskramHeroContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+}
+
+.abhyaskramHeroLeft {
+  width: 62vw;
+}
+
+.abhyaskramHeroRight {
+  width: 22vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= Text ================= */
+
+.abhyaskramHeroTitle {
+  font-family: "Rozha One", serif;
+  font-size: 3vw;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 2vh;
+}
+
+.abhyaskramHeroSubtitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2vh;
+  margin-bottom: 3vh;
+}
+
+.abhyaskramHeroDescription {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 2.35vw;
+  color: #000;
+  font-weight: 500;
+}
+
+/* ================= Button ================= */
+
+.abhyaskramHeroButton {
+  margin-top: 5vh;
+
+  width: 12vw;
+  height: 6vh;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #023061;
+  color: #fff;
+
+  text-decoration: none;
+
+  border-radius: 5vw;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+}
+
+.abhyaskramHeroButton:hover {
+  background: #154a88;
+  box-shadow: 0 0.8vh 2vh rgba(10, 47, 89, 0.28);
+  transform: translateY(-0.25vh);
+}
+
+.abhyaskramHeroButton:active {
+  transform: translateY(0);
+  box-shadow: 0 0.3vh 1vh rgba(10, 47, 89, 0.2);
+}
+
+/* ================= GIF Image ================= */
+
+.abhyaskramHeroImage {
+  width: 18vw;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* No Hover Animation for GIF */
+/* .abhyaskramHeroImage:hover {
+  transform: scale(1.05);
+} */

@@ -1,0 +1,57 @@
+.abhyaskramMarqueeSection {
+  width: 100%;
+  overflow: hidden;
+  background: #023061;
+  padding: 4vh 0;
+  margin-bottom: 1vh;
+}
+
+.abhyaskramMarqueeWrapper {
+  width: 100%;
+}
+
+.abhyaskramMarqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: abhyaskramMarqueeScroll 12s linear infinite;
+}
+
+.abhyaskramMarqueeText {
+  white-space: nowrap;
+  padding-right: 8vw;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1;
+}
+
+@keyframes abhyaskramMarqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on Hover */
+
+/* .abhyaskramMarqueeSection:hover .abhyaskramMarqueeTrack {
+  animation-play-state: paused;
+} */
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .abhyaskramMarqueeSection {
+    padding: 1.8vh 0;
+  }
+
+  .abhyaskramMarqueeText {
+    font-size: 4.5vw;
+    padding-right: 15vw;
+  }
+}

@@ -53,7 +53,7 @@
   align-items: center;
 
   color: #fff;
-  background: #0a2f59;
+  background: #023061;
   text-decoration: none;
 
   border-radius: 5vw;
@@ -65,14 +65,15 @@
   cursor: pointer;
   transition: 0.3s;
 }
-/* 
+
 .shabbaskattaheroButton:hover {
-  background: #0a2f59;
-} */
+  background: #154a88;
+  box-shadow: 0 0.8vh 2vh rgba(10, 47, 89, 0.28);
+  transform: translateY(-0.25vh);
+}
 
 .shabbaskattaheroRight {
   width: 37vw;
-
   display: flex;
   justify-content: flex-end;
 }

@@ -1,0 +1,194 @@
+.abhyaskramCurriculumSection {
+  width: 100%;
+  padding: 8vh 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.abhyaskramCurriculumContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/* ================= Heading ================= */
+
+.abhyaskramCurriculumHeading {
+  text-align: center;
+  font-family: "Rozha One", serif;
+  font-size: 3.5vw;
+  color: #111;
+  margin-bottom: 8vh;
+  line-height: 1.2;
+}
+
+.abhyaskramCurriculumHeading span {
+  color: #0b5cb8;
+}
+
+/* ================= Wrapper ================= */
+
+.abhyaskramCurriculumWrapper {
+  position: relative;
+}
+
+/* ================= Sticky Card ================= */
+
+.abhyaskramCurriculumSticky {
+  position: sticky;
+  margin-bottom: 10vh;
+}
+
+/* ================= Card ================= */
+
+.abhyaskramCurriculumCard {
+  width: 100%;
+  background: #fff;
+  border-radius: 2vw;
+  padding: 2.8vw;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+
+  box-shadow: 0 1vw 2.5vw rgba(0, 0, 0, 0.08);
+
+  transition: all 0.4s ease;
+}
+
+.abhyaskramCurriculumCard:hover {
+  transform: translateY(-0.5vh);
+  box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.12);
+}
+
+/* ================= Zig Zag ================= */
+
+.abhyaskramCurriculumReverse .abhyaskramCurriculumCard {
+  flex-direction: row-reverse;
+}
+
+/* ================= Image ================= */
+
+.abhyaskramCurriculumImageBox {
+  width: 42%;
+}
+
+.abhyaskramCurriculumImage {
+  width: 100%;
+  border-radius: 1.5vw;
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.abhyaskramCurriculumCard:hover .abhyaskramCurriculumImage {
+  transform: scale(1.03);
+}
+
+/* ================= Content ================= */
+
+.abhyaskramCurriculumContent {
+  width: 48%;
+}
+
+.abhyaskramCurriculumTitle {
+  font-family: "Rozha One", serif;
+  font-size: 2.3vw;
+  color: #111;
+  margin-bottom: 3vh;
+}
+
+.abhyaskramCurriculumList {
+  padding-left: 1.4vw;
+  margin: 0 0 4vh;
+}
+
+.abhyaskramCurriculumList li {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.4vw;
+  line-height: 2.4vw;
+  color: #222;
+  margin-bottom: 1.4vh;
+}
+
+/* ================= Button ================= */
+
+.abhyaskramCurriculumButton {
+  width: 12vw;
+  height: 6vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  outline: none;
+
+  border-radius: 5vw;
+
+  background: #0a2f59;
+  color: #fff;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.15vw;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.abhyaskramCurriculumButton:hover {
+  background: #164f92;
+  transform: translateY(-0.3vh);
+  box-shadow: 0 0.8vh 2vh rgba(10, 47, 89, 0.25);
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 768px) {
+
+  .abhyaskramCurriculumHeading {
+    font-size: 7vw;
+    margin-bottom: 5vh;
+  }
+
+  .abhyaskramCurriculumSticky {
+    position: relative;
+    top: unset !important;
+    margin-bottom: 4vh;
+  }
+
+  .abhyaskramCurriculumCard,
+  .abhyaskramCurriculumReverse .abhyaskramCurriculumCard {
+    flex-direction: column;
+    gap: 3vh;
+    padding: 5vw;
+  }
+
+  .abhyaskramCurriculumImageBox,
+  .abhyaskramCurriculumContent {
+    width: 100%;
+  }
+
+  .abhyaskramCurriculumTitle {
+    font-size: 5vw;
+  }
+
+  .abhyaskramCurriculumList {
+    padding-left: 5vw;
+  }
+
+  .abhyaskramCurriculumList li {
+    font-size: 3.8vw;
+    line-height: 6vw;
+  }
+
+  .abhyaskramCurriculumButton {
+    width: 48vw;
+    height: 6.5vh;
+    font-size: 3.5vw;
+  }
+}

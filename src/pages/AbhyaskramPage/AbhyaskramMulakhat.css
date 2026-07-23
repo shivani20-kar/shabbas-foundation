@@ -1,0 +1,248 @@
+.abhyaskrammulakhatSection {
+  width: 100%;
+  padding: 0 0 8vh 0;
+  background: #ffffff;
+}
+
+.abhyaskrammulakhatContainer {
+  width: 100%;
+  padding: 0 8vw;
+  box-sizing: border-box;
+}
+
+/*================ Heading ================*/
+
+.abhyaskrammulakhatHeadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  /* margin-bottom: 6vh; */
+}
+
+.abhyaskrammulakhatHeading {
+  font-family: "Rozha One", serif;
+  font-size: 4vw;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 0vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.abhyaskrammulakhatHeadingGif {
+  display: block;
+  object-fit: contain;
+}
+
+/*================ Cards ================*/
+
+.abhyaskrammulakhatCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-bottom: 6vh;
+}
+
+.abhyaskrammulakhatCard {
+  flex: 1;
+  height: 18vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  border-radius: 1vw;
+
+  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.15);
+
+  transition: 0.35s ease;
+}
+
+.abhyaskrammulakhatPink {
+  background: #ffb0e7;
+}
+
+.abhyaskrammulakhatPurple {
+  background: #dcc1ff;
+}
+
+.abhyaskrammulakhatViolet {
+  background: #eeb2ff;
+}
+
+.abhyaskrammulakhatCardIcon {
+  width: 2vw;
+  height: auto;
+  margin-bottom: 2vh;
+  transition: 0.3s;
+}
+
+.abhyaskrammulakhatCardTitle {
+  width: 90%;
+  margin: 0;
+
+  font-family: "Rozha One", serif;
+  font-size: 2vw;
+  line-height: 1.4;
+  color: #000;
+
+  transition: 0.3s;
+}
+
+/*================ Table Heading ================*/
+
+.abhyaskrammulakhatTableHeading {
+  text-align: center;
+  margin-bottom: 4vh;
+
+  font-family: "Rozha One", serif;
+  font-size: 3vw;
+  color: #000;
+}
+
+/*================ Table ================*/
+
+.abhyaskrammulakhatTableWrapper {
+  width: 70vw;
+  margin: 0 auto 6vh;
+
+  overflow: hidden;
+  border-radius: 0.8vw;
+
+  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.1);
+}
+
+.abhyaskrammulakhatTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Equal Width */
+
+.abhyaskrammulakhatTable col:first-child {
+  width: 50%;
+}
+
+.abhyaskrammulakhatTable col:last-child {
+  width: 50%;
+}
+
+/* Header */
+
+.abhyaskrammulakhatTable thead th {
+  background: #023061;
+  color: #ffffff;
+
+  padding: 2vh 2vw;
+
+  text-align: center;
+
+  font-family: "Rozha One", serif;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+/* Body */
+
+.abhyaskrammulakhatTable tbody td {
+  padding: 2.2vh 2vw;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.7;
+  color: #000;
+  border-bottom: 0.08vw solid #e5e5e5;
+  background: #fff;
+  font-weight: 700;
+}
+
+/* Left Column */
+
+.abhyaskrammulakhatTable tbody td:first-child {
+  text-align: center;
+  padding-left: 3vw;
+}
+
+/* Right Column */
+
+.abhyaskrammulakhatTable tbody td:last-child {
+  text-align: center;
+}
+
+.abhyaskrammulakhatTable tbody tr:nth-child(even) td {
+  background: #f7f7f7;
+}
+
+.abhyaskrammulakhatTable tbody tr:hover td {
+  background: #eef5ff;
+}
+
+/* Total Row */
+
+.abhyaskrammulakhatTable tbody tr.abhyaskrammulakhatTotalRow td {
+  background: #023061 !important;
+  color: #ffffff !important;
+  font-size: 1.35vw;
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.abhyaskrammulakhatTable tbody tr.abhyaskrammulakhatTotalRow td:first-child {
+  text-align: center;
+  padding-left: 3vw;
+}
+
+.abhyaskrammulakhatTable tbody tr.abhyaskrammulakhatTotalRow td:last-child {
+  text-align: center;
+}
+
+/*================ Formula ================*/
+
+.abhyaskrammulakhatFormula {
+  width: 48vw;
+  margin: auto;
+
+  background: #eaf3fc;
+
+  border-radius: 0.8vw;
+  overflow: hidden;
+
+  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.08);
+}
+
+.abhyaskrammulakhatFormulaHeading {
+  margin: 3vh 0 0;
+  text-align: center;
+  font-family: "Rozha One", serif;
+  font-size: 3vw;
+  color: #000;
+  font-weight: 700;
+}
+
+.abhyaskrammulakhatFormulaRow {
+  display: flex;
+  align-items: stretch;
+}
+
+.abhyaskrammulakhatFormulaBox {
+  flex: 1;
+
+  padding: 2.3vh 1vw;
+
+  text-align: center;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.35vw;
+  font-weight: 600;
+  color: #111;
+}
+
+.abhyaskrammulakhatFormulaDivider {
+  width: 0.08vw;
+  background: #d4d4d4;
+}

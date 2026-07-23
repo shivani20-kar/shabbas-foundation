@@ -1,0 +1,84 @@
+.abhyaskramExamPatternSection {
+  width: 100%;
+  padding: 6vh 0;
+  background: linear-gradient(180deg, #ffd84a 0%, #ffd438 40%, #ffcf21 100%);
+}
+
+.abhyaskramExamPatternContainer {
+  width: 100%;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abhyaskramExamPatternGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1vw;
+}
+
+.abhyaskramExamPatternCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  transition: 0.35s ease;
+}
+
+.abhyaskramExamPatternCard:hover {
+  transform: translateY(-0.6vh);
+}
+
+.abhyaskramExamPatternIcon {
+  width: 4vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+
+  margin-bottom: 2vh;
+}
+
+.abhyaskramExamPatternTitle {
+  font-family: "Gotu", sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #111;
+  font-weight: 600;
+}
+
+.abhyaskramExamPatternButton {
+  margin-top: 7vh;
+
+  width: 12vw;
+  height: 6vh;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #023061;
+  color: #fff;
+
+  text-decoration: none;
+
+  border-radius: 5vw;
+
+  font-family: "Gotu", sans-serif;
+  font-size: 1.15vw;
+  font-weight: 600;
+
+  transition: 0.35s;
+}
+
+.abhyaskramExamPatternButton:hover {
+  background: #154a88;
+  box-shadow: 0 0.8vh 2vh rgba(10, 47, 89, 0.28);
+  transform: translateY(-0.25vh);
+}
